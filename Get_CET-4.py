@@ -17,7 +17,7 @@ except pymysql.Error as e:
 cur = conn.cursor()         #创建一个数据库对象
 sql = 'insert into words (words,translation) values(%s,%s);'          #想要执行的sql语句
 
-ssl._create_default_https_context = ssl._create_unverified_context    #全局取消证书验证(反爬)
+ssl._create_default_https_context = ssl._create_unverified_context    #全局取消证书验证
 
 url = 'https://www.eol.cn/html/en/cetwords/cet4.shtml'                #爬取数据的网站
 req = request.Request(url)          #创建一个request对象
