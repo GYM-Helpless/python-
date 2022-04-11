@@ -30,9 +30,7 @@ a = re.findall(limt2,html)                  #使用正则表达式读取内容
 del a[0:4]                                  #去除不需要的数据
 for i in a:
     if i[0]==" ":
-        #print("true")
         i=i[1: ]
-        #print(i)
         if i[0]==" ":
             i = i[1: ]
             i.split(" ",1)
