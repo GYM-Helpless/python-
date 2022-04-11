@@ -42,26 +42,3 @@ for i in a:
     else:
         cur.execute(sql,(i.split(" ",1)[0],i.split(" ",1)[1]))
 conn.close()            #关闭数据库连接
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
